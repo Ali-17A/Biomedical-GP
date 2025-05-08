@@ -12,8 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
   color: #FFFFFF;
   margin-bottom: 1rem;
@@ -23,7 +22,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Navigation */
+/* Header / Navigation */
 header {
   background-color: #0A0A0A;
   padding: 1rem 0;
@@ -101,14 +100,14 @@ nav ul li a:hover {
   background-color: #FF69B4;
 }
 
-/* Sections */
+/* Section Styling */
 section {
   padding: 4rem 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-/* Cards */
+/* Cards Section */
 .cards {
   display: flex;
   flex-wrap: wrap;
