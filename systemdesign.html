@@ -1,12 +1,12 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>System Design - Biomedical GP</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-
 <header>
   <h1>System Design</h1>
   <nav>
@@ -20,27 +20,27 @@
     </ul>
   </nav>
 </header>
-
-<section>
-  <h2>🛠️ System Design</h2>
-
-  <p>Our system is structured into interconnected layers, forming a complete and secure monitoring loop:</p>
-
-  <ol>
-    <li>📥 <strong>Data Collection Layer:</strong> Pacemaker sensors collect physiological and operational metrics.</li>
-    <li>🌐 <strong>Communication Layer:</strong> IoT modules securely transmit data to the Digital Twin infrastructure via wireless channels.</li>
-    <li>🧠 <strong>AI Processing Layer:</strong> Incoming real-time data is continuously analyzed using AI models trained on normal and failure conditions.</li>
-    <li>🚨 <strong>Alert and Action Layer:</strong> Detected anomalies trigger alerts sent directly to physicians, prompting timely intervention.</li>
-    <li>🔄 <strong>Continuous Learning:</strong> Data from resolved cases are fed back into the AI models, making them smarter over time (self-improvement).</li>
-  </ol>
-
-  <p>In addition, cloud-based storage ensures secure historical data analysis for trend identification and research purposes.</p>
+<section class="hero">
+  <div class="hero-content">
+    <h1>How the System Works</h1>
+    <p>A layered structure enabling real-time health response.</p>
+    <a href="advantages.html" class="hero-button">See Benefits</a>
+  </div>
 </section>
-
+<section data-aos="fade-up">
+  <h2>🛠️ Design Workflow</h2>
+  <ol>
+    <li>📥 <strong>Data Collection:</strong> Pacemaker sensors collect metrics.</li>
+    <li>🌐 <strong>Communication:</strong> IoT securely sends data to the cloud.</li>
+    <li>🧠 <strong>AI Processing:</strong> Analyzes real-time input for anomalies.</li>
+    <li>🚨 <strong>Alerts:</strong> Doctors receive instant warnings.</li>
+    <li>🔄 <strong>Feedback:</strong> AI improves using doctor-reviewed data.</li>
+  </ol>
+</section>
 <footer>
   <p>&copy; 2025 Yehya Ibrahim & Riad El Seddik | Graduation Project - Işık University</p>
 </footer>
-
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>
