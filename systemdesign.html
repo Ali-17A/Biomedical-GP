@@ -1,3 +1,5 @@
+<!-- systemdesign.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,6 +9,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
 <header>
   <h1>System Design</h1>
   <nav>
@@ -16,30 +19,41 @@
       <li><a href="systemdesign.html">System Design</a></li>
       <li><a href="advantages.html">Advantages</a></li>
       <li><a href="challenges.html">Challenges</a></li>
+      <li><a href="flowcharts.html">Flowcharts</a></li>
+      <li><a href="comparison.html">Comparison</a></li>
+      <li><a href="patient.html">Patient Feedback</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
+
 <section class="hero">
   <div class="hero-content">
-    <h1>How the System Works</h1>
-    <p>A layered structure enabling real-time health response.</p>
-    <a href="advantages.html" class="hero-button">See Benefits</a>
+    <h1>System Architecture</h1>
+    <p>A data-driven architecture bridging pacemakers and intelligent response.</p>
   </div>
 </section>
+
 <section data-aos="fade-up">
-  <h2>🛠️ Design Workflow</h2>
+  <h2>🛠️ Architecture Layers</h2>
   <ol>
-    <li>📥 <strong>Data Collection:</strong> Pacemaker sensors collect metrics.</li>
-    <li>🌐 <strong>Communication:</strong> IoT securely sends data to the cloud.</li>
-    <li>🧠 <strong>AI Processing:</strong> Analyzes real-time input for anomalies.</li>
-    <li>🚨 <strong>Alerts:</strong> Doctors receive instant warnings.</li>
-    <li>🔄 <strong>Feedback:</strong> AI improves using doctor-reviewed data.</li>
+    <li>📥 <strong>Data Acquisition:</strong> Sensors inside the pacemaker collect metrics like voltage, lead impedance, pacing thresholds, and heartbeat intervals.</li>
+    <li>🌐 <strong>IoT Transmission:</strong> The collected data is encrypted and sent wirelessly to a secured cloud platform through an IoT communication layer.</li>
+    <li>🧠 <strong>Digital Twin Engine:</strong> A cloud-based software replica simulates the physical pacemaker's expected behavior in real time.</li>
+    <li>🤖 <strong>AI Anomaly Detection:</strong> Incoming data is compared with digital twin expectations. If anomalies (like irregular pacing) are found, alerts are generated.</li>
+    <li>📲 <strong>Alert System:</strong> Doctors and caregivers are notified instantly via a secure medical dashboard or app.</li>
   </ol>
 </section>
+
+<section data-aos="fade-up">
+  <h2>📉 Data Pipeline Summary</h2>
+  <p>The pacemaker transmits telemetry data through low-energy protocols. This data flows securely into a centralized AI hub that models the patient’s real-time condition. The AI engine compares inputs to historical baselines and the simulated digital twin, providing confidence scores for anomaly detection and prediction.</p>
+</section>
+
 <footer>
   <p>&copy; 2025 Yehya Ibrahim & Riad El Seddik | Graduation Project - Işık University</p>
 </footer>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
 </body>
