@@ -6,10 +6,23 @@
 }
 
 body {
-  background-color: #0A0A0A;
+  background: url('images/biomedical-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.85); /* dark overlay for readability */
+  z-index: -1;
 }
 
 h1, h2, h3 {
@@ -24,7 +37,7 @@ p {
 
 /* Header / Navigation */
 header {
-  background-color: #0A0A0A;
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 1rem 0;
   text-align: center;
   border-bottom: 1px solid #1E90FF;
@@ -35,6 +48,7 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -50,7 +64,6 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background: url('your-hero-image.jpg') no-repeat center center/cover;
   height: 80vh;
   display: flex;
   align-items: center;
@@ -67,6 +80,7 @@ nav ul li a:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(10, 10, 10, 0.7);
+  z-index: -1;
 }
 
 .hero-content {
@@ -78,11 +92,13 @@ nav ul li a:hover {
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: #1E90FF;
 }
 
 .hero-content p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
+  color: #CCCCCC;
 }
 
 .hero-button {
@@ -105,6 +121,10 @@ section {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-top: 2rem;
 }
 
 /* Cards Section */
@@ -146,9 +166,19 @@ section {
 
 /* Footer */
 footer {
-  background-color: #0A0A0A;
+  background-color: rgba(0, 0, 0, 0.85);
   text-align: center;
   padding: 2rem 0;
   border-top: 1px solid #1E90FF;
   color: #FFFFFF;
+  margin-top: 2rem;
+}
+
+/* Image Styling */
+img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
