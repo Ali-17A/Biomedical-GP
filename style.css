@@ -21,7 +21,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(10, 10, 10, 0.85); /* dark overlay for readability */
+  background-color: rgba(10, 10, 10, 0.85);
   z-index: -1;
 }
 
@@ -62,14 +62,15 @@ nav ul li a:hover {
   color: #1E90FF;
 }
 
-/* Hero Section */
+/* Hero Section (updated size/margin) */
 .hero {
-  height: 80vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
+  padding: 1rem 0;
 }
 
 .hero::after {
@@ -87,31 +88,31 @@ nav ul li a:hover {
   position: relative;
   z-index: 1;
   color: #FFFFFF;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1rem;
   margin: 0 auto;
-  max-width: 700px;
-  background-color: rgba(0, 0, 0, 0.5); /* Subtle transparent background */
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 550px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
 .hero-content h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: #1E90FF;
 }
 
 .hero-content p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
   color: #CCCCCC;
 }
 
 .hero-button {
   background-color: #1E90FF;
   color: #FFFFFF;
-  padding: 0.75rem 1.5rem;
+  padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -125,7 +126,7 @@ nav ul li a:hover {
 
 /* Section Styling */
 section {
-  padding: 4rem 2rem;
+  padding: 3rem 1.5rem;
   max-width: 1200px;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.7);
