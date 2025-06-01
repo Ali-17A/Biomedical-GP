@@ -51,23 +51,6 @@
     ul ul li {
       margin-bottom: 0.4rem;
     }
-    .next-button {
-      display: flex;
-      justify-content: center;
-      margin-top: 1rem;
-    }
-    .next-button a {
-      background-color: #1E90FF;
-      color: white;
-      padding: 0.6rem 1.4rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-    .next-button a:hover {
-      background-color: #FF69B4;
-    }
   </style>
 </head>
 <body>
@@ -129,10 +112,6 @@
         </li>
       </ul>
     </div>
-  </div>
-
-  <div class="next-button">
-    <a href="technology.html">Explore Technology →</a>
   </div>
 </main>
 
