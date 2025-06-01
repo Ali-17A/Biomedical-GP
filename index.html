@@ -7,14 +7,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      font-family: 'Roboto', sans-serif;
-      background: url('images/biomedical-bg.jpg.jpg') no-repeat center center fixed;
+    body {
+      background-image: url('images/biomedical-bg.jpg.jpg');
       background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: 'Roboto', sans-serif;
     }
 
     header {
@@ -39,19 +37,18 @@
       font-weight: 500;
     }
 
-    main {
-      flex: 1;
-      padding: 2rem;
+    h1, h2 {
+      color: #007BFF;
     }
 
     .hero-content {
-      background-color: rgba(255, 255, 255, 0.85);
+      background-color: rgba(255, 255, 255, 0.9);
       padding: 2rem;
       border-radius: 15px;
-      max-width: 800px;
+      max-width: 700px;
       margin: 2rem auto;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
     .hero-button {
@@ -72,16 +69,19 @@
     }
 
     section {
+      padding: 2rem;
+    }
+
+    section.card-wrapper {
       max-width: 900px;
-      margin: 2rem auto;
+      margin: 0 auto;
+    }
+
+    .card {
       background-color: rgba(255, 255, 255, 0.85);
       padding: 2rem;
       border-radius: 15px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    h1, h2 {
-      color: #007BFF;
     }
 
     footer {
@@ -90,7 +90,9 @@
       background: white;
       font-size: 0.9rem;
       color: #333;
-      box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+      position: relative;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
@@ -114,22 +116,22 @@
   </nav>
 </header>
 
-<main>
-  <section class="hero">
-    <div class="hero-content" data-aos="zoom-in">
-      <h1>Empowering Medical Device Monitoring</h1>
-      <p>Using Digital Twins to Predict, Protect, and Save Lives.</p>
-      <a href="proposal.html" class="hero-button">Explore Proposal</a>
-    </div>
-  </section>
+<section class="hero">
+  <div class="hero-content" data-aos="zoom-in">
+    <h1>Empowering Medical Device Monitoring</h1>
+    <p>Using Digital Twins to Predict, Protect, and Save Lives.</p>
+    <a href="proposal.html" class="hero-button">Explore Proposal</a>
+  </div>
+</section>
 
-  <section data-aos="fade-up">
+<section class="card-wrapper" data-aos="fade-up">
+  <div class="card">
     <h2>📋 Project Overview</h2>
     <p>Pacemakers are essential life-supporting devices, but traditional monitoring lacks real-time feedback and prediction. Our graduation project proposes a revolutionary approach using Digital Twin (DT) technology to monitor and analyze pacemaker data in real time. This enables predictive maintenance, anomaly detection, and immediate alerts to medical professionals.</p>
 
     <p>By combining DT with IoT and AI, our system creates a virtual replica of the pacemaker. This model mirrors device behavior and predicts malfunctions using machine learning algorithms, enhancing patient safety and reducing hospital dependency.</p>
-  </section>
-</main>
+  </div>
+</section>
 
 <footer>
   <p>&copy; 2025 Yehya Ibrahim & Riad El Seddik | Graduation Project - Işık University</p>
