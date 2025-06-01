@@ -8,29 +8,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.4);
+    .card-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.4);
       border-radius: 15px;
+      padding: 2rem;
+      margin-bottom: 2rem;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    }
-    h1, h2, h3, h4 {
-      color: #fff;
-    }
-    p, li, td, th {
-      color: #eee;
-      line-height: 1.6;
+      width: 100%;
+      max-width: 900px;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 1rem;
-      margin-bottom: 2rem;
     }
     table, th, td {
-      border: 1px solid #aaa;
+      border: 1px solid #888;
     }
     th, td {
       padding: 0.75rem;
@@ -58,99 +55,119 @@
   </nav>
 </header>
 
+<section class="hero">
+  <div class="hero-content">
+    <h1>📄 Project Proposal</h1>
+    <p>Designing Workflow Models for Medical Device Failure Reporting – Digital Twin</p>
+  </div>
+</section>
+
 <main class="container" data-aos="fade-up">
-  <h2>Objective</h2>
-  <p>Pacemakers are Class III life-sustaining medical devices. Traditional check-ups can miss early signs of failure like battery drainage or lead fracture. Our project proposes integrating Digital Twin (DT) technology for real-time monitoring, predictive failure detection, and instant alerts.</p>
-  <p>A Digital Twin is a virtual replica of a physical system. Combined with IoT sensors and AI, it enables continuous data monitoring, anomaly detection, and automated alerts, transforming patient safety and medical responsiveness.</p>
+  <div class="card-wrapper">
+    <div class="card">
+      <h2>🎯 Objective</h2>
+      <p>Pacemakers are Class III life-sustaining medical devices. Traditional check-ups can miss early signs of failure like battery drainage or lead fracture. Our project proposes integrating Digital Twin (DT) technology for real-time monitoring, predictive failure detection, and instant alerts.</p>
+      <p>A Digital Twin is a virtual replica of a physical system. Combined with IoT sensors and AI, it enables continuous data monitoring, anomaly detection, and automated alerts, transforming patient safety and medical responsiveness.</p>
+    </div>
+  </div>
 
-  <h2>Proposed Design Approach</h2>
-  <ul>
-    <li><strong>IoT Sensors:</strong> Collect data like heart rate, voltage, and battery life.</li>
-    <li><strong>Wireless Transmission:</strong> Data sent via Wi-Fi/Bluetooth to a cloud-based DT.</li>
-    <li><strong>Digital Twin System:</strong> Simulates pacemaker behavior using:
+  <div class="card-wrapper">
+    <div class="card">
+      <h2>🛠 Proposed Design Approach</h2>
       <ul>
-        <li>Manufacturer specifications</li>
-        <li>Patient-specific patterns</li>
-        <li>AI learning from past data</li>
+        <li><strong>IoT Sensors:</strong> Collect heart rate, voltage, and battery life.</li>
+        <li><strong>Wireless Transmission:</strong> Data sent via Wi-Fi/Bluetooth to a cloud-based DT.</li>
+        <li><strong>Digital Twin System:</strong> Simulates pacemaker behavior using:
+          <ul>
+            <li>Manufacturer specifications</li>
+            <li>Patient-specific patterns</li>
+            <li>AI learning from past data</li>
+          </ul>
+        </li>
+        <li><strong>AI Anomaly Detection:</strong> Categorizes risks and sends alerts to experts instantly.</li>
+        <li><strong>System Diagrams (in progress):</strong>
+          <ul>
+            <li>Data Flow from Pacemaker to DT</li>
+            <li>AI Failure Detection Logic</li>
+            <li>Alert System Workflow</li>
+          </ul>
+        </li>
       </ul>
-    </li>
-    <li><strong>AI Anomaly Detection:</strong> Categorizes risks and sends alerts to experts instantly.</li>
-    <li><strong>System Diagrams (in progress):</strong>
+    </div>
+  </div>
+
+  <div class="card-wrapper">
+    <div class="card">
+      <h2>📊 System Comparison</h2>
+      <table>
+        <tr><th>Old System</th><th>Proposed System</th></tr>
+        <tr><td>Regular checkups</td><td>Real-time data</td></tr>
+        <tr><td>Failure after malfunction</td><td>Predictive AI alerts</td></tr>
+        <tr><td>Delayed intervention</td><td>Immediate alerts</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card-wrapper">
+    <div class="card">
+      <h2>⚙️ Realistic Constraints</h2>
       <ul>
-        <li>Data Flow from Pacemaker to DT</li>
-        <li>AI Failure Detection Logic</li>
-        <li>Alert System Workflow</li>
+        <li><strong>Regulations:</strong> ISO 14708-1, ISO 13485, HIPAA compliance</li>
+        <li><strong>Cybersecurity:</strong> Encrypted data, anti-hacking protections</li>
+        <li><strong>Power Efficiency:</strong> Minimize battery impact</li>
+        <li><strong>Cost:</strong> AI ($50K–$500K), IoT ($50K–$1M+)</li>
+        <li><strong>Environmental Impact:</strong> E-waste, signal interference</li>
+        <li><strong>Ethical Considerations:</strong> Patient privacy, accessibility fairness</li>
       </ul>
-    </li>
-  </ul>
+    </div>
+  </div>
 
-  <h2>Realistic Constraints</h2>
-  <ul>
-    <li><strong>Compliance:</strong> ISO 14708-1, ISO 13485, HIPAA</li>
-    <li><strong>Cybersecurity:</strong> Encrypted transmission, hacking resilience</li>
-    <li><strong>Interoperability:</strong> Integrate with various pacemaker brands</li>
-    <li><strong>Power Usage:</strong> Energy-efficient sensors</li>
-    <li><strong>Cost:</strong> Development range: $50K – $1M+</li>
-    <li><strong>Ethics:</strong> Data privacy, AI bias, fairness</li>
-    <li><strong>Environmental:</strong> Device disposal, radiation effects</li>
-  </ul>
+  <div class="card-wrapper">
+    <div class="card">
+      <h2>📋 Project Work Plan</h2>
+      <ul>
+        <li><strong>WP1:</strong> Research & Literature Review – Riad & Yehya</li>
+        <li><strong>WP2:</strong> Define DT-pacemaker interaction – Riad & Yehya</li>
+        <li><strong>WP3:</strong> Draw system flowcharts – Riad & Yehya</li>
+        <li><strong>WP4:</strong> Compliance & Ethics – Riad & Yehya</li>
+        <li><strong>WP5:</strong> Final Report & Presentation – Riad & Yehya</li>
+      </ul>
+      <table>
+        <tr>
+          <th>Work Package</th>
+          <th>Description</th>
+          <th>Performed by</th>
+          <th>Outcome</th>
+        </tr>
+        <tr><td>WP1</td><td>Research & Literature Review</td><td>Riad & Yehya</td><td>Strong theoretical foundation</td></tr>
+        <tr><td>WP2</td><td>Define system interaction</td><td>Riad & Yehya</td><td>Clear workflow</td></tr>
+        <tr><td>WP3</td><td>Draw system flowcharts</td><td>Riad & Yehya</td><td>System visualization</td></tr>
+        <tr><td>WP4</td><td>Ethical & Compliance Research</td><td>Riad & Yehya</td><td>Well-documented challenges</td></tr>
+        <tr><td>WP5</td><td>Final Report & Presentation</td><td>Riad & Yehya</td><td>Ready for evaluation</td></tr>
+      </table>
+    </div>
+  </div>
 
-  <h2>Work Packages</h2>
-  <table>
-    <tr>
-      <th>Work Packages</th>
-      <th>Short Description</th>
-      <th>Performed by (Team member)</th>
-      <th>Expected Outcomes</th>
-    </tr>
-    <tr>
-      <td>WP 1</td>
-      <td>Literature review and research on the DT & IoT while gathering case studies</td>
-      <td>Riad & Yehya</td>
-      <td>A strong theoretical foundation, supporting evidence for the project</td>
-    </tr>
-    <tr>
-      <td>WP 2</td>
-      <td>Define the step-by-step process of how the Digital Twin will interact with the pacemaker.</td>
-      <td>Riad & Yehya</td>
-      <td>A structured workflow outlining IoT data collection, AI-based failure prediction, and the automated reporting</td>
-    </tr>
-    <tr>
-      <td>WP 3</td>
-      <td>Design detailed system diagrams and flowcharts illustrating everything</td>
-      <td>Riad & Yehya</td>
-      <td>High-quality visual representations of the system</td>
-    </tr>
-    <tr>
-      <td>WP 4</td>
-      <td>Research and document compliance requirements (ISO 14708-1, ISO 13485, etc…) Address cybersecurity risks and ethical concerns</td>
-      <td>Riad & Yehya</td>
-      <td>A well-documented section covering legal and ethical challenges</td>
-    </tr>
-    <tr>
-      <td>WP 5</td>
-      <td>Complete all findings and have our questions ready. Prepare a PowerPoint presentation for project defense.</td>
-      <td>Riad & Yehya</td>
-      <td>A complete project report and a presentation ready for evaluation by the jury</td>
-    </tr>
-  </table>
-
-  <h2>Timeline</h2>
-  <table>
-    <tr>
-      <th>Work Package</th>
-      <th>Weeks 1–3</th>
-      <th>Weeks 4–6</th>
-      <th>Weeks 7–9</th>
-      <th>Weeks 10–12</th>
-      <th>Weeks 13–14</th>
-    </tr>
-    <tr><td>WP1</td><td>✔</td><td></td><td>✔</td><td></td><td></td></tr>
-    <tr><td>WP2</td><td></td><td>✔</td><td>✔</td><td></td><td></td></tr>
-    <tr><td>WP3</td><td></td><td></td><td></td><td>✔</td><td></td></tr>
-    <tr><td>WP4</td><td></td><td></td><td></td><td>✔</td><td></td></tr>
-    <tr><td>WP5</td><td></td><td></td><td></td><td></td><td>✔</td></tr>
-  </table>
+  <div class="card-wrapper">
+    <div class="card">
+      <h2>📅 Timeline Overview</h2>
+      <table>
+        <tr>
+          <th>Work Package</th>
+          <th>Weeks 1–3</th>
+          <th>Weeks 4–6</th>
+          <th>Weeks 7–9</th>
+          <th>Weeks 10–12</th>
+          <th>Weeks 13–14</th>
+        </tr>
+        <tr><td>WP1</td><td>✔</td><td></td><td>✔</td><td></td><td></td></tr>
+        <tr><td>WP2</td><td></td><td>✔</td><td>✔</td><td></td><td></td></tr>
+        <tr><td>WP3</td><td></td><td></td><td></td><td>✔</td><td></td></tr>
+        <tr><td>WP4</td><td></td><td></td><td></td><td>✔</td><td></td></tr>
+        <tr><td>WP5</td><td></td><td></td><td></td><td></td><td>✔</td></tr>
+      </table>
+    </div>
+  </div>
 </main>
 
 <footer>
