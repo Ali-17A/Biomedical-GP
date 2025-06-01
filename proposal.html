@@ -51,6 +51,13 @@
     ul ul li {
       margin-bottom: 0.4rem;
     }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -81,125 +88,77 @@
 </section>
 
 <main class="container" data-aos="fade-up">
-
-  <!-- Objective -->
   <div class="card-wrapper">
     <div class="card">
       <h2>🎯 Objective</h2>
-      <p>Pacemakers are a Class III medical device that are life-sustaining. They require regular check-ups, but traditional monitoring is based on periodical check-ins, which may miss early signs of failure like battery draining or lead fractures. Our idea integrates a Digital Twin (DT)—a virtual real-time replica of the pacemaker—capable of simulation, real-time monitoring, and predictive analytics.</p>
-      <p>This system aims to combine IoT sensors, AI-driven failure prediction, and automated alerts to enhance patient safety. Unlike some remote monitoring systems or existing digital twin studies, our design introduces full integration between the AI and IoT to produce proactive feedback and warnings.</p>
+      <p>Pacemakers are Class III life-sustaining medical devices. Traditional monitoring through periodic check-ins often fails to detect early signs of issues such as battery drainage, lead fracture, or malfunction. Our project proposes the integration of Digital Twin (DT) technology for real-time monitoring, predictive failure detection, and automated alerts.</p>
+      <p>By creating a virtual replica of a pacemaker, continuously fed data through IoT sensors, and interpreted with AI, we enable proactive intervention, enhanced patient safety, and responsive care. This project builds on existing studies and introduces full DT integration — real-time AI-based predictions, remote alerts, and evolving patient-specific learning.</p>
     </div>
   </div>
 
-  <!-- Proposed Design Approach -->
   <div class="card-wrapper">
     <div class="card">
       <h2>🛠 Proposed Design Approach</h2>
-      <p>Our design includes the following:</p>
+      <p>Our system uses IoT sensors embedded in the pacemaker to track vital metrics like heart rate, voltage, and battery level. This data is transmitted via Wi-Fi/Bluetooth to a cloud-hosted DT.</p>
+      <p>The DT mirrors the pacemaker behavior using:</p>
       <ul>
-        <li><strong>IoT Sensors:</strong> Collect real-time pacemaker data (e.g., heart rate, voltage, battery life).</li>
-        <li><strong>Wireless Transmission:</strong> Sends data to the cloud via Wi-Fi or Bluetooth.</li>
-        <li><strong>Digital Twin Simulation:</strong> Simulates pacemaker behavior based on:
-          <ul>
-            <li>Manufacturer specifications</li>
-            <li>Patient-specific calibration and pattern learning</li>
-            <li>AI-based continuous updates for anomaly detection</li>
-          </ul>
-        </li>
-        <li><strong>AI Anomaly Detection:</strong> Flags deviations and categorizes risks (low vs critical) to notify healthcare providers.</li>
-        <li><strong>Visual Representations:</strong>
-          <ul>
-            <li><a href="flowcharts.html#pacemaker-dt">⚙️ From Pacemaker to Digital Twin</a></li>
-            <li><a href="flowcharts.html#ai-anomaly">🧠 AI-Based Failure Detection</a></li>
-            <li><a href="flowcharts.html#alert-system">🚨 Alert System Workflow</a></li>
-          </ul>
-        </li>
+        <li>📏 Manufacturer specifications (e.g., voltage range, resistance levels)</li>
+        <li>🧬 Patient-specific calibration (e.g., individual heart behavior)</li>
+        <li>🤖 AI learning from historical trends to evolve accuracy</li>
       </ul>
-      <p>This approach replaces delayed detection with proactive, real-time feedback, improving reliability and safety.</p>
+      <p>AI detects and classifies anomalies by risk severity, sending alerts for real-time intervention. Visual system diagrams will include:</p>
+      <ul>
+        <li><a href="flowcharts.html#pacemaker-dt">⚙️ Data Flow from Pacemaker to DT</a></li>
+        <li><a href="flowcharts.html#ai-anomaly">🧠 AI-Based Failure Detection Steps</a></li>
+        <li><a href="flowcharts.html#alert-system">🚨 Alert System Workflow</a></li>
+      </ul>
     </div>
   </div>
 
-  <!-- Realistic Constraints -->
   <div class="card-wrapper">
     <div class="card">
-      <h2>⚖️ Realistic Constraints</h2>
+      <h2>⚙️ Realistic Constraints</h2>
+      <p>To ensure a safe and compliant system, the project addresses several real-world constraints:</p>
       <ul>
-        <li><strong>Standards:</strong> ISO 14708-1, ISO 13485, HIPAA compliance.</li>
-        <li><strong>Cybersecurity:</strong> Encrypted data, hacker protection, privacy safeguards.</li>
-        <li><strong>Power Efficiency:</strong> Must not drain pacemaker battery.</li>
-        <li><strong>Interoperability:</strong> Works with existing pacemakers, minimal hardware changes.</li>
-        <li><strong>User Interface:</strong> Mobile/doctor dashboard with clear alerts.</li>
-        <li><strong>Cost:</strong> AI ($50k–$500k), IoT ($50k–$1M+).</li>
-        <li><strong>Environmental:</strong> Minimizing e-waste and interference.</li>
-        <li><strong>Ethics:</strong> Data fairness, accessibility, trust in AI.</li>
+        <li><strong>Regulations:</strong> Compliance with ISO 14708-1, ISO 13485, HIPAA for safety and privacy.</li>
+        <li><strong>Cybersecurity:</strong> Encrypted data and protection from remote hacking risks.</li>
+        <li><strong>Power Efficiency:</strong> Minimal battery drain from IoT sensors.</li>
+        <li><strong>Compatibility:</strong> No hardware changes needed for existing pacemakers.</li>
+        <li><strong>User Experience:</strong> Intuitive dashboards and alert notifications.</li>
+        <li><strong>Cost:</strong> Estimated AI development: $50k–$500k; IoT hardware: $50k–$1M+</li>
+        <li><strong>Environmental:</strong> Minimize e-waste and interference from wireless signals.</li>
+        <li><strong>Ethical:</strong> Patient equity, fair access, AI trust, and data transparency.</li>
       </ul>
     </div>
   </div>
 
-  <!-- Work Plan -->
   <div class="card-wrapper">
     <div class="card">
       <h2>📝 Work Plan</h2>
-      <p>Our project progresses through collaborative effort between both team members. We began by conducting a thorough literature review and research into existing DT applications and IoT case studies in healthcare. Based on those findings, we developed a methodology to define how pacemakers will communicate with IoT and be simulated by the DT system.</p>
+      <p>Our work phase consists of collaborative contributions to each stage. We began by conducting in-depth research on Digital Twin and IoT in healthcare, using academic papers, studies, and industry case studies. We used this to justify our design decisions and model structure.</p>
       <p>Next steps included creating system diagrams and flowcharts:</p>
       <ul>
-        <li>Data Flow from Pacemaker to DT</li>
-        <li>AI-Based Failure Detection Steps</li>
-        <li>Alert System Workflow</li>
+        <li><a href="flowcharts.html#pacemaker-dt">⚙️ Data Flow from Pacemaker to DT</a></li>
+        <li><a href="flowcharts.html#ai-anomaly">🧠 AI-Based Failure Detection Steps</a></li>
+        <li><a href="flowcharts.html#alert-system">🚨 Alert System Workflow</a></li>
       </ul>
-      <p>We will also research compliance standards (e.g., ISO and HIPAA) and gather professional feedback from doctors or engineers. If direct consultation isn’t feasible, we will contact universities and hospitals via email to validate our assumptions. Our final stage will be preparing a full PowerPoint and presenting our project thoroughly.</p>
+      <p>We will analyze relevant regulations and constraints (ISO, HIPAA), explore cybersecurity challenges, and if possible, interview doctors and medical engineers for feedback. If direct contact isn't possible, we will email universities and hospitals. Lastly, we’ll prepare a polished presentation and ensure no section is overlooked.</p>
     </div>
   </div>
 
-  <!-- Work Packages -->
   <div class="card-wrapper">
     <div class="card">
       <h2>📦 Work Packages</h2>
       <table>
-        <thead>
-          <tr>
-            <th>Work Package</th>
-            <th>Description</th>
-            <th>Performed by</th>
-            <th>Expected Outcome</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>WP1</td>
-            <td>Literature review on DT & IoT, gather case studies</td>
-            <td>Riad & Yehya</td>
-            <td>Strong theoretical foundation</td>
-          </tr>
-          <tr>
-            <td>WP2</td>
-            <td>Define how the DT will interact with pacemaker</td>
-            <td>Riad & Yehya</td>
-            <td>Clear workflow and methodology</td>
-          </tr>
-          <tr>
-            <td>WP3</td>
-            <td>Design system diagrams and flowcharts</td>
-            <td>Riad & Yehya</td>
-            <td>High-quality visual representations</td>
-          </tr>
-          <tr>
-            <td>WP4</td>
-            <td>Research standards, cybersecurity, ethics</td>
-            <td>Riad & Yehya</td>
-            <td>Comprehensive compliance documentation</td>
-          </tr>
-          <tr>
-            <td>WP5</td>
-            <td>Finalize findings, prepare presentation</td>
-            <td>Riad & Yehya</td>
-            <td>Presentation-ready project package</td>
-          </tr>
-        </tbody>
+        <tr><th>Work Package</th><th>Description</th><th>Performed by</th><th>Expected Outcome</th></tr>
+        <tr><td>WP1</td><td>Literature review & research on DT & IoT</td><td>Riad & Yehya</td><td>Strong theoretical foundation</td></tr>
+        <tr><td>WP2</td><td>Define DT-pacemaker interaction model</td><td>Riad & Yehya</td><td>Clear system workflow</td></tr>
+        <tr><td>WP3</td><td>Create system diagrams & flowcharts</td><td>Riad & Yehya</td><td>Complete visual documentation</td></tr>
+        <tr><td>WP4</td><td>Research regulations, cybersecurity, ethics</td><td>Riad & Yehya</td><td>Comprehensive compliance section</td></tr>
+        <tr><td>WP5</td><td>Prepare presentation, finalize report</td><td>Riad & Yehya</td><td>Ready-to-present deliverables</td></tr>
       </table>
     </div>
   </div>
-
 </main>
 
 <footer>
