@@ -71,17 +71,15 @@ nav ul li a:hover {
   text-align: center;
   position: relative;
   padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.6); /* Fix big white block issue */
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
-  z-index: -1;
+  display: none;
 }
 
 .hero-content {
@@ -90,11 +88,11 @@ nav ul li a:hover {
   color: #111;
   padding: 1.5rem 1rem;
   margin: 0 auto;
-  max-width: 550px;
-  background-color: rgba(255, 255, 255, 0.6);
+  max-width: 700px;
+  background-color: transparent; /* remove inner white box */
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  box-shadow: none;
 }
 
 .hero-content h1 {
@@ -145,7 +143,7 @@ section {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.75); /* slightly lighter */
   padding: 2rem;
   border-radius: 10px;
   width: 300px;
