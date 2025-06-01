@@ -1,126 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>Home - Biomedical GP</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
     body {
-      background-image: url('images/bg.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('images/biomedical-bg.jpg.jpg') no-repeat center center fixed;
+      background-size: cover;
     }
-    .hero {
-      padding: 2rem;
-      background-color: rgba(255, 255, 255, 0.8);
-      border-radius: 10px;
-      max-width: 700px;
-      margin: 3rem auto;
+
+    header {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 1rem;
       text-align: center;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
-    .hero-button {
-      margin-top: 1rem;
-      background-color: #1E90FF;
-      color: #fff;
-      padding: 0.8rem 1.6rem;
-      border-radius: 8px;
+
+    header h1 {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #0077cc;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav a {
       text-decoration: none;
+      color: #000;
       font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 2rem auto;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      color: #0077cc;
+      margin-bottom: 1rem;
+    }
+
+    .hero-button {
+      background-color: #0077cc;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
       display: inline-block;
       transition: background-color 0.3s ease;
     }
+
     .hero-button:hover {
       background-color: #005fa3;
     }
+
     section[data-aos] {
-      background: rgba(255, 255, 255, 0.85);
+      background-color: rgba(255, 255, 255, 0.95);
       margin: 2rem auto;
       padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      max-width: 900px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 1000px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     }
+
     footer {
       text-align: center;
       padding: 1rem;
-      background: rgba(255, 255, 255, 0.9);
       font-size: 0.9rem;
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #333;
       margin-top: 2rem;
-    }
-    header h1 {
-      text-align: center;
-      color: #0077cc;
-      margin: 1rem 0 0.5rem;
-    }
-    nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-    nav li {
-      margin: 0 0.8rem;
-    }
-    nav a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #000;
-    }
-    nav a:hover {
-      color: #1E90FF;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Digital Twin for Pacemaker Monitoring</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="proposal.html">Proposal</a></li>
-      <li><a href="technology.html">Technology</a></li>
-      <li><a href="systemdesign.html">System Design</a></li>
-      <li><a href="advantages.html">Advantages</a></li>
-      <li><a href="challenges.html">Challenges</a></li>
-      <li><a href="flowcharts.html">Flowcharts</a></li>
-      <li><a href="comparison.html">Comparison</a></li>
-      <li><a href="patient.html">Patient Feedback</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <h1>Digital Twin for Pacemaker Monitoring</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="proposal.html">Proposal</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="systemdesign.html">System Design</a></li>
+        <li><a href="advantages.html">Advantages</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="flowcharts.html">Flowcharts</a></li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="patient.html">Patient Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<section class="hero" data-aos="fade-up">
-  <div class="hero-content">
+  <section class="hero" data-aos="zoom-in">
     <h1>Empowering Medical Device Monitoring</h1>
     <p>Using Digital Twins to Predict, Protect, and Save Lives.</p>
     <a href="proposal.html" class="hero-button">Explore Proposal</a>
-  </div>
-</section>
+  </section>
 
-<section data-aos="fade-up">
-  <h2>📋 Project Overview</h2>
-  <p>Pacemakers are essential life-supporting devices, but traditional monitoring lacks real-time feedback and prediction. Our graduation project proposes a revolutionary approach using Digital Twin (DT) technology to monitor and analyze pacemaker data in real time. This enables predictive maintenance, anomaly detection, and immediate alerts to medical professionals.</p>
-  <p>By combining DT with IoT and AI, our system creates a virtual replica of the pacemaker. This model mirrors device behavior and predicts malfunctions using machine learning algorithms, enhancing patient safety and reducing hospital dependency.</p>
-</section>
+  <section data-aos="fade-up">
+    <h2>📋 Project Overview</h2>
+    <p>Pacemakers are essential life-supporting devices, but traditional monitoring lacks real-time feedback and prediction. Our graduation project proposes a revolutionary approach using Digital Twin (DT) technology to monitor and analyze pacemaker data in real time. This enables predictive maintenance, anomaly detection, and immediate alerts to medical professionals.</p>
 
-<footer>
-  <p>&copy; 2025 Yehya Ibrahim & Riad El Seddik | Graduation Project - Işık University</p>
-</footer>
+    <p>By combining DT with IoT and AI, our system creates a virtual replica of the pacemaker. This model mirrors device behavior and predicts malfunctions using machine learning algorithms, enhancing patient safety and reducing hospital dependency.</p>
+  </section>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
+  <footer>
+    &copy; 2025 Yehya Ibrahim & Riad El Seddik | Graduation Project - Işık University
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
