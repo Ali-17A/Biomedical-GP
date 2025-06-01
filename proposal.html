@@ -1,21 +1,19 @@
-<!-- proposal.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Proposal - Digital Twin for Pacemakers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proposal - Biomedical GP</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-
-<header>
-  <h1>Proposal</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
+  <header>
+    <h1>Digital Twin for Pacemaker Monitoring</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
       <li><a href="proposal.html">Proposal</a></li>
       <li><a href="technology.html">Technology</a></li>
       <li><a href="systemdesign.html">System Design</a></li>
@@ -25,162 +23,72 @@
       <li><a href="comparison.html">Comparison</a></li>
       <li><a href="patient.html">Patient Feedback</a></li>
       <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main class="container" data-aos="fade-up">
-  <h2>📄 Project Proposal</h2>
-  <h3>Designing Workflow Models for Medical Device Failure Reporting – Digital Twin</h3>
-
-  <h3>🎯 Objective</h3>
-  <p>
-    Pacemakers are Class III life-sustaining medical devices. Traditional check-ups can miss early signs of failure like battery drainage or lead fracture. Our project proposes integrating Digital Twin (DT) technology for real-time monitoring, predictive failure detection, and instant alerts.
-  </p>
-  <p>
-    A Digital Twin is a virtual replica of a physical system. Combined with IoT sensors and AI, it enables continuous data monitoring, anomaly detection, and automated alerts, transforming patient safety and medical responsiveness.
-  </p>
-
-  <h3>🛠️ Proposed Design Approach</h3>
-  <ul>
-    <li><strong>IoT Sensors:</strong> Collect data like heart rate, voltage, and battery life.</li>
-    <li><strong>Wireless Transmission:</strong> Data sent via Wi-Fi/Bluetooth to a cloud-based DT.</li>
-    <li><strong>Digital Twin System:</strong> Simulates pacemaker behavior using:
-      <ul>
-        <li>Manufacturer specifications</li>
-        <li>Patient-specific patterns</li>
-        <li>AI learning from past data</li>
       </ul>
-    </li>
-    <li><strong>AI Anomaly Detection:</strong> Categorizes risks and sends alerts to experts instantly.</li>
-  </ul>
+    </nav>
+  </header>
 
-  <p><strong>System Diagrams (in progress):</strong></p>
-  <ul>
-    <li>Data Flow from Pacemaker to DT</li>
-    <li>AI Failure Detection Logic</li>
-    <li>Alert System Workflow</li>
-  </ul>
+  <main class="container" data-aos="fade-up">
+    <h2>Project Proposal</h2>
+    <h3>1. Objective</h3>
+    <p>Pacemakers are Class III medical devices that require regular check-ups, but traditional monitoring may miss early symptoms of failure. Our project proposes integrating a Digital Twin (DT) with pacemakers for real-time simulation and performance monitoring. DTs have been used in healthcare, aerospace, smart cities, and more.</p>
+    <p>By using IoT sensors, AI-based anomaly detection, and automated failure reporting, the DT system can alert healthcare providers of problems before they become life-threatening. This innovation offers continuous monitoring, personalized calibration, and improved patient safety.</p>
 
-  <table>
-    <tr>
-      <th>Feature</th>
-      <th>Traditional Monitoring</th>
-      <th>Proposed DT System</th>
-    </tr>
-    <tr>
-      <td>Data Collection</td>
-      <td>Periodic checkups</td>
-      <td>Real-time continuous data</td>
-    </tr>
-    <tr>
-      <td>Failure Detection</td>
-      <td>Post-failure</td>
-      <td>Predictive AI alerts</td>
-    </tr>
-    <tr>
-      <td>Response Time</td>
-      <td>Delayed</td>
-      <td>Instant notification</td>
-    </tr>
-  </table>
+    <h3>2. Proposed Design Approach</h3>
+    <p>The design includes IoT sensors in the pacemaker for real-time data on heart rate, voltage, and battery life. Data is sent via Bluetooth or Wi-Fi to a cloud-based Digital Twin. The DT uses:</p>
+    <ul>
+      <li>Manufacturer specifications</li>
+      <li>Patient-specific calibration</li>
+      <li>AI-based adaptive learning from past data</li>
+    </ul>
+    <p>AI detects anomalies, categorizes their severity, and sends alerts accordingly. Visual tools like system diagrams and flowcharts will explain:</p>
+    <ul>
+      <li>Data flow from pacemaker to DT</li>
+      <li>AI-based failure detection steps</li>
+      <li>Alert system workflow</li>
+    </ul>
+    <table>
+      <tr><th>Old System</th><th>Proposed System</th></tr>
+      <tr><td>Regular checkups</td><td>Real-time data</td></tr>
+      <tr><td>Failure after malfunction</td><td>Predictive AI alerts</td></tr>
+      <tr><td>Delayed intervention</td><td>Immediate alerts</td></tr>
+    </table>
 
-  <h3>⚙️ Realistic Constraints</h3>
-  <ul>
-    <li><strong>Regulations:</strong> ISO 14708-1, ISO 13485, HIPAA</li>
-    <li><strong>Cybersecurity:</strong> Encrypted data, no remote tampering</li>
-    <li><strong>Power Efficiency:</strong> Sensor design must preserve pacemaker battery</li>
-    <li><strong>Cost:</strong> AI: $50K–$500K, IoT: $50K–$1M+</li>
-    <li><strong>Environmental Impact:</strong> Minimizing e-waste, avoiding signal interference</li>
-    <li><strong>Ethical Concerns:</strong> Data privacy, fairness, AI transparency</li>
-  </ul>
+    <h3>3. Realistic Constraints</h3>
+    <p>Constraints include compliance with standards (ISO 14708-1, ISO 13485, HIPAA), high cybersecurity, interoperability with existing pacemakers, and minimal power impact. The system must be user-friendly and affordable. AI development and IoT integration may cost from $50K to $1M+.</p>
+    <p>Environmental impact (e-waste, interference), ethical concerns (data privacy, AI bias), and fairness (accessibility) must be addressed. With careful implementation, DTs can reduce healthcare costs, hospitalizations, and improve predictive maintenance.</p>
 
-  <h3>📈 Project Work Plan</h3>
-  <ul>
-    <li>Literature Review & Research (WP1)</li>
-    <li>Define IoT–DT interaction (WP2)</li>
-    <li>System Diagrams & Flowcharts (WP3)</li>
-    <li>Compliance & Ethics Research (WP4)</li>
-    <li>Prepare Final Report & Presentation (WP5)</li>
-  </ul>
+    <h3>4. Work Plan</h3>
+    <p>The work plan includes research, system design, diagram creation, compliance documentation, and final presentation preparation. If expert consultation isn’t possible, we will contact institutions working on DTs for feedback.</p>
+    <ul>
+      <li><strong>WP1:</strong> Literature review – Riad & Yehya</li>
+      <li><strong>WP2:</strong> Define DT-pacemaker interaction – Riad & Yehya</li>
+      <li><strong>WP3:</strong> System diagrams – Riad & Yehya</li>
+      <li><strong>WP4:</strong> Compliance & ethics – Riad & Yehya</li>
+      <li><strong>WP5:</strong> Final report and presentation – Riad & Yehya</li>
+    </ul>
+    <h4>Timeline:</h4>
+    <table>
+      <tr>
+        <th>Work Package</th>
+        <th>Weeks 1–3</th>
+        <th>Weeks 4–6</th>
+        <th>Weeks 7–9</th>
+        <th>Weeks 10–12</th>
+        <th>Weeks 13–14</th>
+      </tr>
+      <tr><td>WP1</td><td>X</td><td></td><td>X</td><td></td><td></td></tr>
+      <tr><td>WP2</td><td></td><td>X</td><td>X</td><td></td><td></td></tr>
+      <tr><td>WP3</td><td></td><td></td><td></td><td>X</td><td></td></tr>
+      <tr><td>WP4</td><td></td><td></td><td></td><td>X</td><td></td></tr>
+      <tr><td>WP5</td><td></td><td></td><td></td><td></td><td>X</td></tr>
+    </table>
+  </main>
 
-  <table>
-    <tr>
-      <th>Work Package</th>
-      <th>Description</th>
-      <th>Performed by</th>
-      <th>Outcome</th>
-    </tr>
-    <tr>
-      <td>WP1</td>
-      <td>Research & Literature Review</td>
-      <td>Riad & Yehya</td>
-      <td>Strong theoretical foundation</td>
-    </tr>
-    <tr>
-      <td>WP2</td>
-      <td>Define system interaction</td>
-      <td>Riad & Yehya</td>
-      <td>Clear workflow</td>
-    </tr>
-    <tr>
-      <td>WP3</td>
-      <td>Draw system flowcharts</td>
-      <td>Riad & Yehya</td>
-      <td>System visualization</td>
-    </tr>
-    <tr>
-      <td>WP4</td>
-      <td>Ethical & Compliance Research</td>
-      <td>Riad & Yehya</td>
-      <td>Well-documented challenges</td>
-    </tr>
-    <tr>
-      <td>WP5</td>
-      <td>Final Report & Presentation</td>
-      <td>Riad & Yehya</td>
-      <td>Ready for evaluation</td>
-    </tr>
-  </table>
+  <footer>
+    <p>&copy; 2025 Yehya Ibrahim & Riad El Seddik | Graduation Project - Işık University</p>
+  </footer>
 
-  <h3>📅 Timeline Overview</h3>
-  <table>
-    <tr>
-      <th>Work Package</th>
-      <th>Weeks 1–3</th>
-      <th>Weeks 4–6</th>
-      <th>Weeks 7–9</th>
-      <th>Weeks 10–12</th>
-      <th>Weeks 13–14</th>
-    </tr>
-    <tr>
-      <td>WP1</td>
-      <td>✔</td><td></td><td>✔</td><td></td><td></td>
-    </tr>
-    <tr>
-      <td>WP2</td>
-      <td></td><td>✔</td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-      <td>WP3</td>
-      <td></td><td></td><td>✔</td><td></td><td></td>
-    </tr>
-    <tr>
-      <td>WP4</td>
-      <td></td><td></td><td></td><td>✔</td><td></td>
-    </tr>
-    <tr>
-      <td>WP5</td>
-      <td></td><td></td><td></td><td></td><td>✔</td>
-    </tr>
-  </table>
-</main>
-
-<footer>
-  <p>&copy; 2025 Yehya Ibrahim & Riad El Seddik | Graduation Project - Işık University</p>
-</footer>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
