@@ -1,137 +1,20 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Home - Biomedical GP</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Digital Twin for Pacemaker Monitoring - A biomedical graduation project using AI and IoT to enhance patient safety.">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background-image: url('images/biomedical-bg.jpg'); /* Fixed double .jpg */
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    main {
-      flex: 1;
-    }
-
-    .hero {
-      display: flex;
-      justify-content: center;
-      padding: 2rem;
-    }
-
-    .hero-content {
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 2rem;
-      border-radius: 15px;
-      max-width: 800px;
-      width: 100%;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    .hero-button {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: #007BFF;
-      color: white;
-      padding: 0.7rem 1.4rem;
-      border: none;
-      border-radius: 6px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .hero-button:hover {
-      background-color: #0056b3;
-    }
-
-    section {
-      padding: 2rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: white;
-      font-size: 0.9rem;
-      color: #333;
-      border-top: 1px solid #ccc;
-      margin-top: auto;
-    }
-
-    header {
-      background: white;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 0;
-      margin: 1rem 0 0;
-      flex-wrap: wrap;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #007BFF;
-      font-weight: 500;
-    }
-
-    h1, h2 {
-      color: #007BFF;
-    }
-
-    .card-wrapper {
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-    }
-
-    .card {
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 2rem;
-      border-radius: 15px;
-      max-width: 1000px;
-      width: 100%;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-      color: #222;
-      text-align: left;
-      transition: transform 0.3s ease;
-    }
-  </style>
 </head>
-
-<body id="top">
+<body>
 
 <header>
   <h1>Digital Twin for Pacemaker Monitoring</h1>
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="proposal.html">Proposal</a></li>
       <li><a href="technology.html">Technology</a></li>
       <li><a href="systemdesign.html">System Design</a></li>
       <li><a href="advantages.html">Advantages</a></li>
@@ -139,22 +22,32 @@
       <li><a href="flowcharts.html">Flowcharts</a></li>
       <li><a href="comparison.html">Comparison</a></li>
       <li><a href="patient.html">Patient Feedback</a></li>
+      <li><a href="proposal.html">Proposal</a></li> <!-- ✅ New tab added here -->
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<main>
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Empowering Medical Device Monitoring</h2>
-      <p>Using Digital Twins to Predict, Protect, and Save Lives.</p>
-      <a href="proposal.html" class="hero-button" role="button" aria-label="Explore Proposal Page">Explore Proposal</a>
-    </div>
-  </section>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Empowering Medical Device Monitoring</h1>
+    <p>Using Digital Twins to Predict, Protect, and Save Lives.</p>
+    <a href="technology.html" class="hero-button">Explore Technology</a>
+  </div>
+</section>
 
-  <section class="card-wrapper" data-aos="fade-up">
-    <div class="card">
-      <h2>📋 Project Overview</h2>
-      <p>Pacemakers are essential life-supporting devices, but traditional monitoring lacks real-time feedback and prediction. Our graduation project proposes a revolutionary approach using Digital Twin (DT) technology to monitor and analyze pacemaker data in real time. This enables predictive maintenance, anomaly detection, and immediate alerts to medical professionals.</p>
-      <p>By combining DT with IoT and AI, our system creates a virtual replica of the pacemaker. This model mirrors devi
+<section data-aos="fade-up">
+  <h2>📋 Project Overview</h2>
+  <p>Pacemakers are essential life-supporting devices, but traditional monitoring lacks real-time feedback and prediction. Our graduation project proposes a revolutionary approach using Digital Twin (DT) technology to monitor and analyze pacemaker data in real time. This enables predictive maintenance, anomaly detection, and immediate alerts to medical professionals.</p>
+
+  <p>By combining DT with IoT and AI, our system creates a virtual replica of the pacemaker. This model mirrors device behavior and predicts malfunctions using machine learning algorithms, enhancing patient safety and reducing hospital dependency.</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Yehya Ibrahim & Riad El Seddik | Graduation Project - Işık University</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>
