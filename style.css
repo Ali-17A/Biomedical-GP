@@ -8,7 +8,7 @@
 body {
   background: url('images/biomedical-bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #FFFFFF;
+  color: #111;
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   position: relative;
@@ -21,13 +21,13 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(10, 10, 10, 0.85);
+  background-color: rgba(173, 216, 230, 0.85); /* Light blue overlay */
   z-index: -1;
 }
 
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
-  color: #FFFFFF;
+  color: #000;
   margin-bottom: 1rem;
 }
 
@@ -37,7 +37,7 @@ p {
 
 /* Header / Navigation */
 header {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 1rem 0;
   text-align: center;
   border-bottom: 1px solid #1E90FF;
@@ -52,17 +52,17 @@ nav ul {
 }
 
 nav ul li a {
-  color: #FFFFFF;
+  color: #0077aa;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #1E90FF;
+  color: #FF69B4;
 }
 
-/* Hero Section (updated size/margin) */
+/* Hero Section */
 .hero {
   height: 60vh;
   display: flex;
@@ -80,20 +80,20 @@ nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(10, 10, 10, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
   z-index: -1;
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
-  color: #FFFFFF;
+  color: #111;
   padding: 1.5rem 1rem;
   margin: 0 auto;
   max-width: 550px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -106,7 +106,7 @@ nav ul li a:hover {
 .hero-content p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
-  color: #CCCCCC;
+  color: #222;
 }
 
 .hero-button {
@@ -129,10 +129,11 @@ section {
   padding: 3rem 1.5rem;
   max-width: 1200px;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   margin-top: 2rem;
+  color: #111;
 }
 
 /* Cards Section */
@@ -144,12 +145,14 @@ section {
 }
 
 .card {
-  background-color: #1A1A1A;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 2rem;
   border-radius: 10px;
   width: 300px;
   text-align: center;
   transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #111;
 }
 
 .card:hover {
@@ -165,20 +168,20 @@ section {
 .card-title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #FFFFFF;
+  color: #111;
 }
 
 .card-text {
-  color: #CCCCCC;
+  color: #333;
 }
 
 /* Footer */
 footer {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(255, 255, 255, 0.85);
   text-align: center;
   padding: 2rem 0;
   border-top: 1px solid #1E90FF;
-  color: #FFFFFF;
+  color: #111;
   margin-top: 2rem;
 }
 
@@ -188,5 +191,5 @@ img {
   max-width: 100%;
   border-radius: 10px;
   margin: 1rem 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
