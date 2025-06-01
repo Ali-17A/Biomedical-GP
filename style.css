@@ -8,7 +8,7 @@
 body {
   background: url('images/biomedical-bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #222; /* Slightly softer text than full black */
+  color: #222;
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   position: relative;
@@ -139,14 +139,15 @@ section {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 2rem;
   border-radius: 15px;
-  max-width: 850px;
+  max-width: 1000px;
   width: 100%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   color: #222;
   text-align: left;
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
