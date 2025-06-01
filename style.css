@@ -8,7 +8,7 @@
 body {
   background: url('images/biomedical-bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #111;
+  color: #222; /* Slightly softer text than full black */
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   position: relative;
@@ -27,7 +27,7 @@ body::before {
 
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
-  color: #000;
+  color: #1E90FF;
   margin-bottom: 1rem;
 }
 
@@ -64,35 +64,26 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  height: 60vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
-  padding: 1rem 0;
-  background-color: rgba(255, 255, 255, 0.6); /* Fix big white block issue */
+  padding: 2rem 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
   margin: 2rem auto;
-  max-width: 800px;
+  max-width: 900px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.hero::after {
-  display: none;
-}
-
 .hero-content {
-  position: relative;
-  z-index: 1;
-  color: #111;
-  padding: 1.5rem 1rem;
-  margin: 0 auto;
-  max-width: 700px;
-  background-color: transparent; /* remove inner white box */
-  border-radius: 10px;
-  text-align: center;
+  max-width: 100%;
+  padding: 0;
+  background-color: transparent;
   box-shadow: none;
+  color: #222;
 }
 
 .hero-content h1 {
@@ -103,8 +94,7 @@ nav ul li a:hover {
 
 .hero-content p {
   font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: #222;
+  color: #333;
 }
 
 .hero-button {
@@ -131,7 +121,7 @@ section {
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   margin-top: 2rem;
-  color: #111;
+  color: #222;
 }
 
 /* Cards Section */
@@ -142,19 +132,25 @@ section {
   justify-content: center;
 }
 
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
 .card {
-  background-color: rgba(255, 255, 255, 0.75); /* slightly lighter */
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 2rem;
-  border-radius: 10px;
-  width: 300px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  color: #111;
+  border-radius: 15px;
+  max-width: 850px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  color: #222;
+  text-align: left;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .card-icon {
@@ -166,7 +162,7 @@ section {
 .card-title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #111;
+  color: #1E90FF;
 }
 
 .card-text {
