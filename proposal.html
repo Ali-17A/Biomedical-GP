@@ -14,7 +14,7 @@
       padding: 1rem;
     }
     .card {
-      background-color: rgba(255, 255, 255, 0.85);
+      background-color: rgba(255, 255, 255, 0.9);
       padding: 2rem;
       border-radius: 15px;
       max-width: 1000px;
@@ -23,6 +23,7 @@
       color: #222;
       text-align: left;
       transition: transform 0.3s ease;
+      margin-bottom: 2rem;
     }
     table {
       width: 100%;
@@ -47,9 +48,6 @@
     }
     li {
       margin-bottom: 0.6rem;
-    }
-    ul ul li {
-      margin-bottom: 0.4rem;
     }
   </style>
 </head>
@@ -84,33 +82,66 @@
   <div class="card-wrapper">
     <div class="card">
       <h2>🎯 Objective</h2>
-      <p>Pacemakers are Class III life-sustaining medical devices. Traditional check-ups can miss early signs of failure like battery drainage or lead fracture. Our project proposes integrating Digital Twin (DT) technology for real-time monitoring, predictive failure detection, and instant alerts.</p>
-      <p>A Digital Twin is a virtual replica of a physical system. Combined with IoT sensors and AI, it enables continuous data monitoring, anomaly detection, and automated alerts, transforming patient safety and medical responsiveness.</p>
+      <p>Pacemakers are class III, life-sustaining medical devices that require constant monitoring. Traditional systems rely on check-ins that may miss early failure signs. Our project proposes using a Digital Twin (DT) system—a virtual replica of the pacemaker—integrated with AI and IoT to monitor in real-time, predict failures, and send automated alerts. Unlike existing systems, our DT includes AI-based prediction and individualized learning for each patient. Our goal is to shift from reactive to predictive maintenance, saving lives and reducing hospital dependency.</p>
+      <p>Existing literature supports DT applications in other sectors. Our project builds on these by focusing specifically on heart pacemakers and proposing full AI-IoT-DT integration with predictive features.</p>
     </div>
   </div>
 
   <div class="card-wrapper">
     <div class="card">
       <h2>🛠 Proposed Design Approach</h2>
+      <p>Our design includes IoT sensors to collect data like heart rate, voltage, and battery level. This is transmitted wirelessly to a cloud-based DT for real-time analysis. The DT uses manufacturer specs, patient history, and machine learning to compare expected vs actual performance. Any anomalies are categorized by AI as low or high risk, triggering alerts accordingly. Flowcharts illustrate:</p>
       <ul>
-        <li><strong>IoT Sensors:</strong> Collect heart rate, voltage, and battery life.</li>
-        <li><strong>Wireless Transmission:</strong> Data sent via Wi-Fi/Bluetooth to a cloud-based DT.</li>
-        <li><strong>Digital Twin System:</strong> Simulates pacemaker behavior using:
-          <ul>
-            <li>Manufacturer specifications</li>
-            <li>Patient-specific patterns</li>
-            <li>AI learning from past data</li>
-          </ul>
-        </li>
-        <li><strong>AI Anomaly Detection:</strong> Categorizes risks and sends alerts to experts instantly.</li>
-        <li><strong>System Diagrams (in progress):</strong>
-          <ul>
-            <li><a href="flowcharts.html#alert-system">🚨 Alert System Workflow</a></li>
-            <li><a href="flowcharts.html#ai-anomaly">🧠 AI and Anomaly Detection</a></li>
-            <li><a href="flowcharts.html#pacemaker-dt">⚙️ From Pacemaker to Digital Twin</a></li>
-          </ul>
-        </li>
+        <li><a href="flowcharts.html#pacemaker-dt">⚙️ From Pacemaker to Digital Twin</a></li>
+        <li><a href="flowcharts.html#ai-anomaly">🧠 AI-Based Failure Detection</a></li>
+        <li><a href="flowcharts.html#alert-system">🚨 Alert System Workflow</a></li>
       </ul>
+      <p>Comparison of Systems:</p>
+      <table>
+        <thead>
+          <tr><th>Feature</th><th>Old System</th><th>Proposed DT System</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Data Collection</td><td>Regular Checkups</td><td>Real-Time IoT</td></tr>
+          <tr><td>Failure Detection</td><td>After Malfunction</td><td>Predictive AI Alerts</td></tr>
+          <tr><td>Response Time</td><td>Delayed</td><td>Immediate</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card-wrapper">
+    <div class="card">
+      <h2>📌 Realistic Constraints</h2>
+      <p>The project faces technical, legal, economic, and ethical constraints:</p>
+      <ul>
+        <li>Regulatory: Must comply with ISO 14708-1, ISO 13485, HIPAA</li>
+        <li>Cybersecurity: Prevent unauthorized access & tampering</li>
+        <li>Manufacturability: Integrate without affecting pacemaker battery/lifespan</li>
+        <li>Cost: AI systems ($50K–500K), IoT sensors ($50–1M+)</li>
+        <li>Environment: e-waste from disposable sensors, electromagnetic interference</li>
+        <li>Ethics: AI transparency, accessibility for all income levels, trust in automation</li>
+      </ul>
+      <p>Despite challenges, DT tech could reduce emergency visits, increase device lifespan, and make healthcare proactive and more cost-efficient.</p>
+    </div>
+  </div>
+
+  <div class="card-wrapper">
+    <div class="card">
+      <h2>🗂 Work Plan</h2>
+      <p>Work was divided into five packages:</p>
+      <table>
+        <thead>
+          <tr><th>Work Package</th><th>Description</th><th>Performed By</th><th>Expected Outcome</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>WP 1</td><td>Literature review & case studies on DT & IoT</td><td>Riad & Yehya</td><td>Theoretical foundation</td></tr>
+          <tr><td>WP 2</td><td>Define Digital Twin workflow</td><td>Riad & Yehya</td><td>Clear functional system design</td></tr>
+          <tr><td>WP 3</td><td>Create flowcharts & diagrams</td><td>Riad & Yehya</td><td>Visual system documentation</td></tr>
+          <tr><td>WP 4</td><td>Document constraints, ethics & standards</td><td>Riad & Yehya</td><td>Compliance-ready proposal</td></tr>
+          <tr><td>WP 5</td><td>Prepare report, slides, & consult experts</td><td>Riad & Yehya</td><td>Final defense-ready project</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </main>
