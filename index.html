@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Home - Biomedical GP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Digital Twin for Pacemaker Monitoring - A biomedical graduation project using AI and IoT to enhance patient safety.">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      background-image: url('images/biomedical-bg.jpg.jpg');
+      background-image: url('images/biomedical-bg.jpg'); /* Fixed double .jpg */
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
@@ -117,7 +123,8 @@
     }
   </style>
 </head>
-<body>
+
+<body id="top">
 
 <header>
   <h1>Digital Twin for Pacemaker Monitoring</h1>
@@ -142,7 +149,7 @@
     <div class="hero-content">
       <h2>Empowering Medical Device Monitoring</h2>
       <p>Using Digital Twins to Predict, Protect, and Save Lives.</p>
-      <a href="proposal.html" class="hero-button">Explore Proposal</a>
+      <a href="proposal.html" class="hero-button" role="button" aria-label="Explore Proposal Page">Explore Proposal</a>
     </div>
   </section>
 
@@ -150,17 +157,4 @@
     <div class="card">
       <h2>📋 Project Overview</h2>
       <p>Pacemakers are essential life-supporting devices, but traditional monitoring lacks real-time feedback and prediction. Our graduation project proposes a revolutionary approach using Digital Twin (DT) technology to monitor and analyze pacemaker data in real time. This enables predictive maintenance, anomaly detection, and immediate alerts to medical professionals.</p>
-      <p>By combining DT with IoT and AI, our system creates a virtual replica of the pacemaker. This model mirrors device behavior and predicts malfunctions using machine learning algorithms, enhancing patient safety and reducing hospital dependency.</p>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <a href="#top" style="text-decoration:none; color:#007BFF; font-weight:bold;">Back to Top</a>
-  <p>&copy; 2025 Yehya Ibrahim & Riad El Seddik | Graduation Project - Işık University</p>
-</footer>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
-</body>
-</html>
+      <p>By combining DT with IoT and AI, our system creates a virtual replica of the pacemaker. This model mirrors devi
