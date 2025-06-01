@@ -81,69 +81,125 @@
 </section>
 
 <main class="container" data-aos="fade-up">
+
+  <!-- Objective -->
   <div class="card-wrapper">
     <div class="card">
-      <h2>🗓 Work Plan</h2>
-      <p>Our work phase consists of a step-by-step plan where both team members, Yehya and Riad, are equally contributing. Initially, we began with an in-depth literature review and research phase, focusing on understanding current pacemaker technology, Digital Twin applications, and related AI/IoT integration methods.</p>
-      <p>After this, we defined our methodology using a research-based justification approach. We reviewed existing use cases in healthcare where Digital Twin and predictive maintenance models have been successful. Our plan then moved to the design phase, where we started building system models and flowcharts to define:</p>
-      <ul>
-        <li>⚙️ Data Flow from Pacemaker to DT</li>
-        <li>🧠 AI-Based Failure Detection Steps</li>
-        <li>🚨 Alert System Workflow</li>
-      </ul>
-      <p>Once diagrams were drafted, we focused on constraints and standards like ISO 14708-1 and HIPAA. This involved documenting compliance, cybersecurity protocols, and ethical challenges.</p>
-      <p>We also planned outreach to doctors and biomedical engineers to gather professional feedback. If in-person feedback is unavailable, we'll reach out to hospitals and universities by email to ensure we’ve gathered a comprehensive set of perspectives.</p>
-      <p>The final phase will include creating a compelling PowerPoint presentation, rehearsing our defense, and double-checking that no essential component has been overlooked.</p>
+      <h2>🎯 Objective</h2>
+      <p>Pacemakers are a Class III medical device that are life-sustaining. They require regular check-ups, but traditional monitoring is based on periodical check-ins, which may miss early signs of failure like battery draining or lead fractures. Our idea integrates a Digital Twin (DT)—a virtual real-time replica of the pacemaker—capable of simulation, real-time monitoring, and predictive analytics.</p>
+      <p>This system aims to combine IoT sensors, AI-driven failure prediction, and automated alerts to enhance patient safety. Unlike some remote monitoring systems or existing digital twin studies, our design introduces full integration between the AI and IoT to produce proactive feedback and warnings.</p>
     </div>
   </div>
 
+  <!-- Proposed Design Approach -->
   <div class="card-wrapper">
     <div class="card">
-      <h2>📋 Work Packages</h2>
+      <h2>🛠 Proposed Design Approach</h2>
+      <p>Our design includes the following:</p>
+      <ul>
+        <li><strong>IoT Sensors:</strong> Collect real-time pacemaker data (e.g., heart rate, voltage, battery life).</li>
+        <li><strong>Wireless Transmission:</strong> Sends data to the cloud via Wi-Fi or Bluetooth.</li>
+        <li><strong>Digital Twin Simulation:</strong> Simulates pacemaker behavior based on:
+          <ul>
+            <li>Manufacturer specifications</li>
+            <li>Patient-specific calibration and pattern learning</li>
+            <li>AI-based continuous updates for anomaly detection</li>
+          </ul>
+        </li>
+        <li><strong>AI Anomaly Detection:</strong> Flags deviations and categorizes risks (low vs critical) to notify healthcare providers.</li>
+        <li><strong>Visual Representations:</strong>
+          <ul>
+            <li><a href="flowcharts.html#pacemaker-dt">⚙️ From Pacemaker to Digital Twin</a></li>
+            <li><a href="flowcharts.html#ai-anomaly">🧠 AI-Based Failure Detection</a></li>
+            <li><a href="flowcharts.html#alert-system">🚨 Alert System Workflow</a></li>
+          </ul>
+        </li>
+      </ul>
+      <p>This approach replaces delayed detection with proactive, real-time feedback, improving reliability and safety.</p>
+    </div>
+  </div>
+
+  <!-- Realistic Constraints -->
+  <div class="card-wrapper">
+    <div class="card">
+      <h2>⚖️ Realistic Constraints</h2>
+      <ul>
+        <li><strong>Standards:</strong> ISO 14708-1, ISO 13485, HIPAA compliance.</li>
+        <li><strong>Cybersecurity:</strong> Encrypted data, hacker protection, privacy safeguards.</li>
+        <li><strong>Power Efficiency:</strong> Must not drain pacemaker battery.</li>
+        <li><strong>Interoperability:</strong> Works with existing pacemakers, minimal hardware changes.</li>
+        <li><strong>User Interface:</strong> Mobile/doctor dashboard with clear alerts.</li>
+        <li><strong>Cost:</strong> AI ($50k–$500k), IoT ($50k–$1M+).</li>
+        <li><strong>Environmental:</strong> Minimizing e-waste and interference.</li>
+        <li><strong>Ethics:</strong> Data fairness, accessibility, trust in AI.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Work Plan -->
+  <div class="card-wrapper">
+    <div class="card">
+      <h2>📝 Work Plan</h2>
+      <p>Our project progresses through collaborative effort between both team members. We began by conducting a thorough literature review and research into existing DT applications and IoT case studies in healthcare. Based on those findings, we developed a methodology to define how pacemakers will communicate with IoT and be simulated by the DT system.</p>
+      <p>Next steps included creating system diagrams and flowcharts:</p>
+      <ul>
+        <li>Data Flow from Pacemaker to DT</li>
+        <li>AI-Based Failure Detection Steps</li>
+        <li>Alert System Workflow</li>
+      </ul>
+      <p>We will also research compliance standards (e.g., ISO and HIPAA) and gather professional feedback from doctors or engineers. If direct consultation isn’t feasible, we will contact universities and hospitals via email to validate our assumptions. Our final stage will be preparing a full PowerPoint and presenting our project thoroughly.</p>
+    </div>
+  </div>
+
+  <!-- Work Packages -->
+  <div class="card-wrapper">
+    <div class="card">
+      <h2>📦 Work Packages</h2>
       <table>
         <thead>
           <tr>
             <th>Work Package</th>
-            <th>Short Description</th>
+            <th>Description</th>
             <th>Performed by</th>
-            <th>Expected Outcomes</th>
+            <th>Expected Outcome</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>WP1</td>
-            <td>Literature review and research on DT & IoT with case studies</td>
+            <td>Literature review on DT & IoT, gather case studies</td>
             <td>Riad & Yehya</td>
-            <td>A strong theoretical foundation and supporting evidence</td>
+            <td>Strong theoretical foundation</td>
           </tr>
           <tr>
             <td>WP2</td>
-            <td>Define step-by-step DT and pacemaker interaction</td>
+            <td>Define how the DT will interact with pacemaker</td>
             <td>Riad & Yehya</td>
-            <td>Structured workflow of IoT data, AI predictions, reporting</td>
+            <td>Clear workflow and methodology</td>
           </tr>
           <tr>
             <td>WP3</td>
-            <td>Design diagrams and flowcharts</td>
+            <td>Design system diagrams and flowcharts</td>
             <td>Riad & Yehya</td>
-            <td>Detailed visuals of system processes</td>
+            <td>High-quality visual representations</td>
           </tr>
           <tr>
             <td>WP4</td>
-            <td>Research compliance, ISO standards, cybersecurity, and ethics</td>
+            <td>Research standards, cybersecurity, ethics</td>
             <td>Riad & Yehya</td>
-            <td>Comprehensive documentation of legal and ethical concerns</td>
+            <td>Comprehensive compliance documentation</td>
           </tr>
           <tr>
             <td>WP5</td>
-            <td>Prepare presentation and finalize report</td>
+            <td>Finalize findings, prepare presentation</td>
             <td>Riad & Yehya</td>
-            <td>Complete deliverables for evaluation</td>
+            <td>Presentation-ready project package</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
+
 </main>
 
 <footer>
