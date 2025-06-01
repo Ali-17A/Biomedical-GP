@@ -9,117 +9,76 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: #eaf4fb url('images/bg.svg') no-repeat center center fixed;
+      background-image: url('images/bg.png');
       background-size: cover;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 2rem;
-      background-color: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    header h1 {
-      font-size: 1.4rem;
-      color: #1366d6;
-      font-weight: 700;
-      line-height: 1.2;
-      margin: 0;
-    }
-    nav ul {
-      display: flex;
-      gap: 1.2rem;
-      list-style: none;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
     }
-    nav a {
-      text-decoration: none;
-      font-weight: 500;
-      color: #000;
-    }
-    nav a:hover {
-      color: #1366d6;
-    }
     .hero {
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-    .hero-content {
-      background: #fff;
       padding: 2rem;
-      margin: auto;
-      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.8);
       border-radius: 10px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    }
-    .hero h1 {
-      font-size: 2rem;
-      color: #1366d6;
+      max-width: 700px;
+      margin: 3rem auto;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
     .hero-button {
-      display: inline-block;
       margin-top: 1rem;
-      background-color: #1366d6;
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border-radius: 5px;
-      font-weight: bold;
+      background-color: #1E90FF;
+      color: #fff;
+      padding: 0.8rem 1.6rem;
+      border-radius: 8px;
       text-decoration: none;
-      transition: background-color 0.3s;
+      font-weight: bold;
+      display: inline-block;
+      transition: background-color 0.3s ease;
     }
     .hero-button:hover {
-      background-color: #0a4fab;
+      background-color: #005fa3;
     }
-    section {
+    section[data-aos] {
+      background: rgba(255, 255, 255, 0.85);
+      margin: 2rem auto;
       padding: 2rem;
-    }
-    section h2 {
-      color: #1366d6;
-    }
-    section p {
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       max-width: 900px;
-      margin: auto;
-      font-size: 1rem;
-      line-height: 1.6;
     }
     footer {
       text-align: center;
-      padding: 1.5rem;
-      background: #f0f0f0;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.9);
       font-size: 0.9rem;
-      color: #444;
+      margin-top: 2rem;
     }
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        background-color: white;
-        position: absolute;
-        right: 1rem;
-        top: 70px;
-        padding: 1rem;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        display: none;
-      }
-      nav ul.active {
-        display: flex;
-      }
-      .menu-toggle {
-        display: block;
-        cursor: pointer;
-      }
+    header h1 {
+      text-align: center;
+      color: #0077cc;
+      margin: 1rem 0 0.5rem;
     }
-    .menu-toggle {
-      display: none;
-      font-size: 1.5rem;
-      color: #1366d6;
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      margin: 0 0.8rem;
+    }
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #000;
+    }
+    nav a:hover {
+      color: #1E90FF;
     }
   </style>
 </head>
@@ -127,7 +86,6 @@
 
 <header>
   <h1>Digital Twin for Pacemaker Monitoring</h1>
-  <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</div>
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
