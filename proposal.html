@@ -14,7 +14,7 @@
       padding: 1rem;
     }
     .card {
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.85);
       padding: 2rem;
       border-radius: 15px;
       max-width: 1000px;
@@ -28,6 +28,7 @@
     table {
       width: 100%;
       border-collapse: collapse;
+      margin-top: 1rem;
     }
     table, th, td {
       border: 1px solid #888;
@@ -48,6 +49,9 @@
     }
     li {
       margin-bottom: 0.6rem;
+    }
+    ul ul li {
+      margin-bottom: 0.4rem;
     }
   </style>
 </head>
@@ -82,64 +86,81 @@
   <div class="card-wrapper">
     <div class="card">
       <h2>🎯 Objective</h2>
-      <p>Pacemakers are class III, life-sustaining medical devices that require constant monitoring. Traditional systems rely on check-ins that may miss early failure signs. Our project proposes using a Digital Twin (DT) system—a virtual replica of the pacemaker—integrated with AI and IoT to monitor in real-time, predict failures, and send automated alerts. Unlike existing systems, our DT includes AI-based prediction and individualized learning for each patient. Our goal is to shift from reactive to predictive maintenance, saving lives and reducing hospital dependency.</p>
-      <p>Existing literature supports DT applications in other sectors. Our project builds on these by focusing specifically on heart pacemakers and proposing full AI-IoT-DT integration with predictive features.</p>
+      <p>Pacemakers are a Class III life-sustaining medical device. Traditional monitoring methods rely on periodic check-ups that may fail to detect early signs of issues like battery depletion or lead fractures. Our project introduces Digital Twin (DT) technology to provide real-time monitoring, predictive diagnostics, and immediate alerts. DT integrates IoT sensors, cloud computing, and AI to create a dynamic digital model of the pacemaker, continuously comparing real data to expected behavior. The result is a safer, more responsive patient care system with proactive failure detection.</p>
     </div>
   </div>
 
   <div class="card-wrapper">
     <div class="card">
       <h2>🛠 Proposed Design Approach</h2>
-      <p>Our design includes IoT sensors to collect data like heart rate, voltage, and battery level. This is transmitted wirelessly to a cloud-based DT for real-time analysis. The DT uses manufacturer specs, patient history, and machine learning to compare expected vs actual performance. Any anomalies are categorized by AI as low or high risk, triggering alerts accordingly. Flowcharts illustrate:</p>
+      <p>The system uses IoT sensors embedded in pacemakers to collect vital data—heart rate, voltage, battery status. This data is transmitted wirelessly (Wi-Fi/Bluetooth) to a cloud-hosted Digital Twin. The DT replicates real-time device behavior and compares data against manufacturer standards, personalized patient norms, and AI-learned patterns. An AI engine evaluates deviations, classifying them into risk levels. Critical anomalies trigger alerts to medical professionals. Flowcharts demonstrate:</p>
       <ul>
         <li><a href="flowcharts.html#pacemaker-dt">⚙️ From Pacemaker to Digital Twin</a></li>
-        <li><a href="flowcharts.html#ai-anomaly">🧠 AI-Based Failure Detection</a></li>
+        <li><a href="flowcharts.html#ai-anomaly">🧠 AI and Anomaly Detection</a></li>
         <li><a href="flowcharts.html#alert-system">🚨 Alert System Workflow</a></li>
       </ul>
-      <p>Comparison of Systems:</p>
-      <table>
-        <thead>
-          <tr><th>Feature</th><th>Old System</th><th>Proposed DT System</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Data Collection</td><td>Regular Checkups</td><td>Real-Time IoT</td></tr>
-          <tr><td>Failure Detection</td><td>After Malfunction</td><td>Predictive AI Alerts</td></tr>
-          <tr><td>Response Time</td><td>Delayed</td><td>Immediate</td></tr>
-        </tbody>
-      </table>
     </div>
   </div>
 
   <div class="card-wrapper">
     <div class="card">
-      <h2>📌 Realistic Constraints</h2>
-      <p>The project faces technical, legal, economic, and ethical constraints:</p>
+      <h2>⚠️ Realistic Constraints for the Project</h2>
+      <p>To ensure safety and feasibility, our system must meet stringent medical standards:</p>
       <ul>
-        <li>Regulatory: Must comply with ISO 14708-1, ISO 13485, HIPAA</li>
-        <li>Cybersecurity: Prevent unauthorized access & tampering</li>
-        <li>Manufacturability: Integrate without affecting pacemaker battery/lifespan</li>
-        <li>Cost: AI systems ($50K–500K), IoT sensors ($50–1M+)</li>
-        <li>Environment: e-waste from disposable sensors, electromagnetic interference</li>
-        <li>Ethics: AI transparency, accessibility for all income levels, trust in automation</li>
+        <li><strong>Regulatory Compliance:</strong> ISO 14708-1, ISO 13485, HIPAA for patient data protection.</li>
+        <li><strong>Cybersecurity:</strong> Encrypted data channels, defense against unauthorized access and tampering.</li>
+        <li><strong>Battery Efficiency:</strong> IoT modules must not drain the pacemaker battery significantly.</li>
+        <li><strong>Cost Estimates:</strong> AI development ($50K–$500K), IoT integration ($50K–$1M+).</li>
+        <li><strong>Environmental/Ethical:</strong> Minimize e-waste and ensure equitable access to AI-enabled care.</li>
       </ul>
-      <p>Despite challenges, DT tech could reduce emergency visits, increase device lifespan, and make healthcare proactive and more cost-efficient.</p>
+      <p>Though challenging, these constraints are essential to developing a trustworthy, effective system.</p>
     </div>
   </div>
 
   <div class="card-wrapper">
     <div class="card">
-      <h2>🗂 Work Plan</h2>
-      <p>Work was divided into five packages:</p>
+      <h2>📋 Work Plan</h2>
+      <p>The project follows a structured work package plan:</p>
       <table>
         <thead>
-          <tr><th>Work Package</th><th>Description</th><th>Performed By</th><th>Expected Outcome</th></tr>
+          <tr>
+            <th>Work Package</th>
+            <th>Description</th>
+            <th>Performed by</th>
+            <th>Expected Outcome</th>
+          </tr>
         </thead>
         <tbody>
-          <tr><td>WP 1</td><td>Literature review & case studies on DT & IoT</td><td>Riad & Yehya</td><td>Theoretical foundation</td></tr>
-          <tr><td>WP 2</td><td>Define Digital Twin workflow</td><td>Riad & Yehya</td><td>Clear functional system design</td></tr>
-          <tr><td>WP 3</td><td>Create flowcharts & diagrams</td><td>Riad & Yehya</td><td>Visual system documentation</td></tr>
-          <tr><td>WP 4</td><td>Document constraints, ethics & standards</td><td>Riad & Yehya</td><td>Compliance-ready proposal</td></tr>
-          <tr><td>WP 5</td><td>Prepare report, slides, & consult experts</td><td>Riad & Yehya</td><td>Final defense-ready project</td></tr>
+          <tr>
+            <td>WP1</td>
+            <td>Research and Literature Review</td>
+            <td>Riad & Yehya</td>
+            <td>Theoretical foundation</td>
+          </tr>
+          <tr>
+            <td>WP2</td>
+            <td>Define DT-pacemaker interaction process</td>
+            <td>Riad & Yehya</td>
+            <td>Clear operational workflow</td>
+          </tr>
+          <tr>
+            <td>WP3</td>
+            <td>Create system diagrams and flowcharts</td>
+            <td>Riad & Yehya</td>
+            <td>Visual representation of system logic</td>
+          </tr>
+          <tr>
+            <td>WP4</td>
+            <td>Research standards, constraints, and ethics</td>
+            <td>Riad & Yehya</td>
+            <td>Well-justified constraints section</td>
+          </tr>
+          <tr>
+            <td>WP5</td>
+            <td>Prepare presentation and final report</td>
+            <td>Riad & Yehya</td>
+            <td>Presentation-ready deliverables</td>
+          </tr>
         </tbody>
       </table>
     </div>
