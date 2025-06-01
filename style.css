@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   background: url('images/biomedical-bg.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -12,6 +16,9 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   position: relative;
+
+  display: flex;
+  flex-direction: column;
 }
 
 body::before {
@@ -177,7 +184,7 @@ footer {
   padding: 2rem 0;
   border-top: 1px solid #1E90FF;
   color: #111;
-  margin-top: 2rem;
+  margin-top: auto;
 }
 
 /* Image Styling */
