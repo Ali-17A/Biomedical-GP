@@ -4,26 +4,182 @@
 <head>
   <meta charset="UTF-8">
   <title>Home - Biomedical GP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    header {
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: relative;
+      z-index: 1000;
+      border-bottom: 1px solid #ccc;
+    }
+
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      color: #1E90FF;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #1E90FF;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: #1E90FF;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 900px) {
+      .menu-toggle {
+        display: flex;
+      }
+
+      nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #fff;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 0;
+      }
+
+      nav ul.open {
+        max-height: 500px;
+        padding: 1rem 0;
+      }
+
+      nav ul li {
+        text-align: center;
+        margin: 0.6rem 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        animation: fadeIn 0.5s forwards;
+      }
+
+      nav ul.open li {
+        animation-delay: calc(0.1s * var(--i));
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Hero section */
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #f5faff;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #1E90FF;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 1rem 0 2rem;
+    }
+
+    .hero-button {
+      background-color: #1E90FF;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-button:hover {
+      background-color: #005fa3;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f0f0f0;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
 
 <header>
   <h1>Digital Twin for Pacemaker Monitoring</h1>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="proposal.html">Proposal</a></li>
-      <li><a href="technology.html">Technology</a></li>
-      <li><a href="systemdesign.html">System Design</a></li>
-      <li><a href="advantages.html">Advantages</a></li>
-      <li><a href="challenges.html">Challenges</a></li>
-      <li><a href="flowcharts.html">Flowcharts</a></li>
-      <li><a href="comparison.html">Comparison</a></li>
-      <li><a href="patient.html">Patient Feedback</a></li>
-      <li><a href="contact.html">Contact</a></li>
+    <ul id="nav-links">
+      <li style="--i:1"><a href="index.html">Home</a></li>
+      <li style="--i:2"><a href="proposal.html">Proposal</a></li>
+      <li style="--i:3"><a href="technology.html">Technology</a></li>
+      <li style="--i:4"><a href="systemdesign.html">System Design</a></li>
+      <li style="--i:5"><a href="advantages.html">Advantages</a></li>
+      <li style="--i:6"><a href="challenges.html">Challenges</a></li>
+      <li style="--i:7"><a href="flowcharts.html">Flowcharts</a></li>
+      <li style="--i:8"><a href="comparison.html">Comparison</a></li>
+      <li style="--i:9"><a href="patient.html">Patient Feedback</a></li>
+      <li style="--i:10"><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -49,5 +205,11 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('open');
+  }
+</script>
 </body>
 </html>
