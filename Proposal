@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proposal - Digital Twin for Pacemakers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: #fff;
+    }
+    h1, h2, h3 {
+      color: #0f3057;
+    }
+    h1 {
+      border-bottom: 2px solid #0f3057;
+      padding-bottom: 0.3rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 0.8rem;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📄 Project Proposal</h1>
+    <h2>Designing Workflow Models for Medical Device Failure Reporting – Digital Twin</h2>
+
+    <h3>🎯 Objective</h3>
+    <p>
+      Pacemakers are Class III life-sustaining medical devices that require consistent monitoring. Traditional methods rely on periodic checkups that may miss early failure signs like battery drain or lead fracture. Our project proposes integrating a Digital Twin (DT) system with pacemakers to enable real-time monitoring, predictive failure detection using AI, and automated reporting.
+    </p>
+    <p>
+      A Digital Twin is a virtual replica of a real-world system. By incorporating IoT-based data collection, machine learning, and failure analysis, this model provides continuous performance monitoring and instant notifications to medical professionals in case of anomalies.
+    </p>
+
+    <h3>🛠️ Proposed Design Approach</h3>
+    <ul>
+      <li><strong>IoT Sensors:</strong> Gather real-time pacemaker data such as heart rate, voltage, and battery life.</li>
+      <li><strong>Wireless Transfer:</strong> Data transmitted via Wi-Fi or Bluetooth to the cloud-based DT.</li>
+      <li><strong>Digital Twin Model:</strong> Compares current behavior against:
+        <ul>
+          <li>Manufacturer specifications</li>
+          <li>Patient-specific patterns</li>
+          <li>Historical performance via machine learning</li>
+        </ul>
+      </li>
+      <li><strong>AI Anomaly Detection:</strong> Classifies and alerts healthcare providers based on the severity of detected issues.</li>
+    </ul>
+
+    <p><strong>Flow Diagrams:</strong> (To be included in development)</p>
+    <ul>
+      <li>Data Flow from Pacemaker to DT</li>
+      <li>AI-Based Failure Detection Steps</li>
+      <li>Alert System Workflow</li>
+    </ul>
+
+    <table>
+      <tr>
+        <th>Feature</th>
+        <th>Traditional Monitoring</th>
+        <th>Proposed DT System</th>
+      </tr>
+      <tr>
+        <td>Data Collection</td>
+        <td>Periodic checkups</td>
+        <td>Continuous real-time data</td>
+      </tr>
+      <tr>
+        <td>Failure Detection</td>
+        <td>After malfunction</td>
+        <td>AI-based predictive alerts</td>
+      </tr>
+      <tr>
+        <td>Response Time</td>
+        <td>Delayed intervention</td>
+        <td>Instant alerts to experts</td>
+      </tr>
+    </table>
+
+    <h3>⚙️ Realistic Constraints</h3>
+    <ul>
+      <li><strong>Regulatory Compliance:</strong> ISO 14708-1, ISO 13485, HIPAA</li>
+      <li><strong>Cybersecurity:</strong> Encrypted data, hack prevention, patient safety</li>
+      <li><strong>Hardware Limitations:</strong> Minimal changes to existing pacemakers, battery preservation</li>
+      <li><strong>Costs:</strong> AI development ($50K–$500K), IoT integration ($50K–$1M+)</li>
+      <li><strong>Environmental Impact:</strong> e-Waste from sensor replacement, wireless interference safeguards</li>
+      <li><strong>Ethical Concerns:</strong> Data privacy, fair access, AI reliability and transparency</li>
+    </ul>
+
+    <h3>📈 Project Work Plan</h3>
+    <p><strong>Methodology:</strong></p>
+    <ol>
+      <li>Conduct literature review and gather related studies</li>
+      <li>Define pacemaker–IoT–DT interaction and structure</li>
+      <li>Design diagrams and system models</li>
+      <li>Address compliance, cybersecurity, and ethics</li>
+      <li>Prepare full project report and presentation</li>
+    </ol>
+
+    <table>
+      <tr>
+        <th>Work Package</th>
+        <th>Description</th>
+        <th>Team Member(s)</th>
+        <th>Expected Outcome</th>
+      </tr>
+      <tr>
+        <td>WP1</td>
+        <td>Literature review and case studies</td>
+        <td>Riad & Yehya</td>
+        <td>Theoretical foundation</td>
+      </tr>
+      <tr>
+        <td>WP2</td>
+        <td>Define DT and pacemaker interaction</td>
+        <td>Riad & Yehya</td>
+        <td>Workflow documentation</td>
+      </tr>
+      <tr>
+        <td>WP3</td>
+        <td>Design system diagrams and flowcharts</td>
+        <td>Riad & Yehya</td>
+        <td>Visual system representations</td>
+      </tr>
+      <tr>
+        <td>WP4</td>
+        <td>Research compliance and ethical aspects</td>
+        <td>Riad & Yehya</td>
+        <td>Compliant, ethical documentation</td>
+      </tr>
+      <tr>
+        <td>WP5</td>
+        <td>Finalize project and prepare presentation</td>
+        <td>Riad & Yehya</td>
+        <td>Presentation-ready materials</td>
+      </tr>
+    </table>
+
+    <h3>📅 Timeline Overview</h3>
+    <table>
+      <tr>
+        <th>Work Package</th>
+        <th>Weeks 1–3</th>
+        <th>Weeks 4–6</th>
+        <th>Weeks 7–9</th>
+        <th>Weeks 10–12</th>
+        <th>Weeks 13–14</th>
+      </tr>
+      <tr>
+        <td>WP1</td>
+        <td>✔</td>
+        <td></td>
+        <td>✔</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>WP2</td>
+        <td></td>
+        <td>✔</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>WP3</td>
+        <td></td>
+        <td></td>
+        <td>✔</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>WP4</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>✔</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>WP5</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>✔</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
