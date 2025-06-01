@@ -13,42 +13,25 @@
       background-attachment: fixed;
       background-position: center;
       font-family: 'Roboto', sans-serif;
-    }
-
-    header {
-      background: white;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
+      margin: 0;
       padding: 0;
-      margin: 1rem 0 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    nav ul li a {
-      text-decoration: none;
-      color: #007BFF;
-      font-weight: 500;
-    }
-
-    h1, h2 {
-      color: #007BFF;
+    main {
+      flex: 1;
     }
 
     .hero-content {
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.95);
       padding: 2rem;
       border-radius: 15px;
-      max-width: 700px;
+      max-width: 800px;
       margin: 2rem auto;
-      text-align: center;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
 
     .hero-button {
@@ -72,27 +55,53 @@
       padding: 2rem;
     }
 
-    section.card-wrapper {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .card {
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    }
-
     footer {
       text-align: center;
       padding: 1rem;
       background: white;
       font-size: 0.9rem;
       color: #333;
-      position: relative;
-      bottom: 0;
-      width: 100%;
+      border-top: 1px solid #ccc;
+      margin-top: auto;
+    }
+
+    header {
+      background: white;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0;
+      margin: 1rem 0 0;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: 500;
+    }
+
+    h1, h2 {
+      color: #007BFF;
+    }
+
+    .card-wrapper {
+      max-width: 900px;
+      margin: 2rem auto;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
@@ -116,22 +125,23 @@
   </nav>
 </header>
 
-<section class="hero">
-  <div class="hero-content" data-aos="zoom-in">
-    <h1>Empowering Medical Device Monitoring</h1>
-    <p>Using Digital Twins to Predict, Protect, and Save Lives.</p>
-    <a href="proposal.html" class="hero-button">Explore Proposal</a>
-  </div>
-</section>
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Empowering Medical Device Monitoring</h2>
+      <p>Using Digital Twins to Predict, Protect, and Save Lives.</p>
+      <a href="proposal.html" class="hero-button">Explore Proposal</a>
+    </div>
+  </section>
 
-<section class="card-wrapper" data-aos="fade-up">
-  <div class="card">
-    <h2>📋 Project Overview</h2>
-    <p>Pacemakers are essential life-supporting devices, but traditional monitoring lacks real-time feedback and prediction. Our graduation project proposes a revolutionary approach using Digital Twin (DT) technology to monitor and analyze pacemaker data in real time. This enables predictive maintenance, anomaly detection, and immediate alerts to medical professionals.</p>
-
-    <p>By combining DT with IoT and AI, our system creates a virtual replica of the pacemaker. This model mirrors device behavior and predicts malfunctions using machine learning algorithms, enhancing patient safety and reducing hospital dependency.</p>
-  </div>
-</section>
+  <section class="card-wrapper" data-aos="fade-up">
+    <div class="card">
+      <h2>📋 Project Overview</h2>
+      <p>Pacemakers are essential life-supporting devices, but traditional monitoring lacks real-time feedback and prediction. Our graduation project proposes a revolutionary approach using Digital Twin (DT) technology to monitor and analyze pacemaker data in real time. This enables predictive maintenance, anomaly detection, and immediate alerts to medical professionals.</p>
+      <p>By combining DT with IoT and AI, our system creates a virtual replica of the pacemaker. This model mirrors device behavior and predicts malfunctions using machine learning algorithms, enhancing patient safety and reducing hospital dependency.</p>
+    </div>
+  </section>
+</main>
 
 <footer>
   <p>&copy; 2025 Yehya Ibrahim & Riad El Seddik | Graduation Project - Işık University</p>
